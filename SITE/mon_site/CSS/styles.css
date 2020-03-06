@@ -1,0 +1,65 @@
+header{
+    display: inline-block;
+    width: 48%;
+}
+
+
+div#content div{
+    display: inline-block;   
+    width: 48%; 
+}
+
+div#content div.leftbox{
+    vertical-align: top;
+}
+
+div#content div h1, p, iframe{
+    margin: 35px; 
+}
+
+div#content div.rightbox{
+    
+}
+nav.menu-nav ul li.btn{
+    display: inline-block; 
+    list-style-type: none;
+}
+
+nav.menu-nav ul li.btn a{
+    color: white; 
+    background-color: red; 
+    text-decoration: none; 
+    padding: 10px; 
+}
+
+nav.menu-nav ul li.btn:hover a{
+    color: white;
+    background-color: #540000;
+    transition: 1s all;
+}
+
+ p.welcome{ 
+    color: #fff; 
+    background-color: #000;     
+}
+    
+p.vive_le_css{
+    color: blueviolet;
+
+    font-weight: bold; 
+}
+
+body{
+    background-color:#7778;  
+}
+ 
+h1.headline{
+    font-size: 50px; 
+    padding-top: 15px; 
+    padding-left: 540px; 
+}
+
+a{                                                                                                    
+    color: blue; 
+    opacity: 1;
+}   
