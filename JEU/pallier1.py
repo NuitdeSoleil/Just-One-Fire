@@ -24,7 +24,13 @@ sleep(1)
 print("vous voyez une femmme qui semble inconsiente")
 sleep(2)
 sauvez_femme = input("voulez vous la sauvez: ")
-if sauvez_femme == 'oui ':
+while sauvez_femme not in ["oui", "non"]:
+    print("nous n'avons pas bien compris veuillez répétez")
+    sleep(3)
+    print("(répondre de préference par oui ou par non merci)")
+    sauvez_femme = input("voulez vous la sauvez: ")
+    
+if sauvez_femme == 'oui':
     print("vous vous equipez avec une bouteille d'oxygène pour allez la sauver")
     sleep(2)
     if aléatoire == 1:
@@ -34,10 +40,7 @@ if sauvez_femme == 'oui ':
     elif aléatoire == 2:
         exit("vous n'arriver pas à temps pour sauver cette femme")
 
-
-
-
-elif sauvez_femme == 'non':
+else:
     print("vous la laisser mourir, ce n'est pas bien vortre metier c'est de sauver les gens pas de les laisser mourire. Mais bon")
     sleep(2)
     print("Une heure après votre chef vous convoque dans son bureau. Il vous demande comment c'est passer votre première intervention.")
@@ -55,48 +58,6 @@ elif sauvez_femme == 'non':
     elif mentir == 'non':
             print("vous lui dites qu'au moment venue de sauver une vie vous avez perdue tout vos moyens")
             print("il vous répond qu'il vous remercie de votre honnêté même si vous perdu vos moyen ce n'était pas grave")
-
-
-else:
-    print("nous n'avons pas bien compris veuillez répétez")
-    sleep(3)
-    print("(répondre de préference par oui ou par non merci)")
-    sauvez_femme = input("voulez vous la sauvez: ")
-
-    #deuxième fois mdr
-    if sauvez_femme == 'oui':
-        print("vous vous equipez avec une bouteille d'oxygène pour allez la sauver")
-    sleep(2)
-    if aléatoire == 1:
-        print("vous sortez la femme de la grange pour l'enmener dans une ambulance")
-        sleep(2)
-
-    elif aléatoire == 2:
-        exit("vous n'arriver pas à temps pour sauver cette femme")
-
-
-
-
-    elif sauvez_femme == 'non':
-        print("vous la laisser mourir, ce n'est pas bien vortre metier c'est de sauver les gens pas de les laisser mourire. Mais bon")
-        sleep(2)
-        print("Une heure après votre chef vous convoque dans son bureau. Il vous demande comment c'est passer votre première intervention.")
-        mentir = input("voulez vous lui mentir? ")
-    if mentir == 'oui':
-        sleep(2)
-        if aléatoire == 1:
-            print("vous lui dites que vous avez réussis à maitriser le feu et qu'aucune victine n'est à déplorer")
-        elif aléatoire == 2:
-            print("vous tentez de lui mentir mais il voit votre visage crispé")
-            sleep(2)
-            exit("GAME OVER")
-
-
-    elif mentir == 'non':
-            print("vous lui dites qu'au moment venue de sauver une vie vous avez perdue tout vos moyens")
-            print("il vous répond qu'il vous remercie de votre honnêté même si vous perdu vos moyen ce n'était pas grave")
-
-
 
 
     print("téléportation zone 2")
