@@ -1,7 +1,7 @@
 //MODULE DISCORD  
 const Discord = require("discord.js");
 const client =new Discord.Client();
-client.login("Njc5NzY0Mjg1NTA4OTQ0MDY3.XlZd4A.DKOjh8iPkiuurNe3aZQbMk63bTs");
+client.login("token");
 //MODULE FS
 const fs = require("fs");
 client.commands = new Discord.Collection();
